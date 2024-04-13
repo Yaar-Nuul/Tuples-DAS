@@ -43,3 +43,25 @@ for fruit in fruits:
 colors = ('red', 'orange', 'blue')
 print('yellow' in colors)  
 print('red' in colors) 
+
+
+# To remove an item, you have to convert tuples-to-list, 
+# remove item then convert that list2-to-tuple, using remove(), list(), and tuple() methods
+
+tuplex = ("w", 3, "r", "s", "o", "u", "r", "c", "e")
+listx = list(tuplex)
+print(listx)
+listx.remove("c")
+tuplex = tuple(listx)
+print(tuplex)
+
+# Adding items in a tuple: do the same as remove ut now add
+
+my_tuple = (1, 2, 3)
+print(my_tuple)
+my_list = list(my_tuple)
+my_list.append(4)
+my_list.extend([5, 6])
+my_updated_tuple = tuple(my_list)
+
+print(my_updated_tuple)
