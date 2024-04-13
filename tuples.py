@@ -22,6 +22,9 @@ mixed_tuple = (2, 'Hello', 'Python', True)
 print(mixed_tuple)
 
 print(mixed_tuple[0])
+print(mixed_tuple[-1])
+print(mixed_tuple[0:])
+print(mixed_tuple[:-1])
 
 
 
